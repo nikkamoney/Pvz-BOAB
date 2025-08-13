@@ -10,12 +10,16 @@
       height: 100vh;
       margin: 0;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       background: #111;
+      font-family: Arial, sans-serif;
     }
+
+    /* Big red join button */
     a.button {
-      font-size: 10rem;
+      font-size: 3rem;
       padding: 20px 40px;
       background: #ff4444;
       color: white;
@@ -23,15 +27,59 @@
       border-radius: 10px;
       font-family: Arial, sans-serif;
       transition: background 0.3s;
+      margin-top: 20px;
+      display: inline-block;
     }
     a.button:hover {
       background: #cc0000;
     }
+
+    /* Discord-style embed card */
+    .discord-embed {
+      max-width: 500px;
+      background-color: #2f3136;
+      border-radius: 10px;
+      padding: 15px;
+      color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .discord-embed h2 {
+      margin: 0;
+      color: #5865F2;
+    }
+    .discord-embed p {
+      margin: 8px 0 12px;
+      color: #ccc;
+    }
+    .discord-embed a {
+      display: inline-block;
+      padding: 8px 12px;
+      background-color: #5865F2;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .discord-embed a:hover {
+      background-color: #4752C4;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Discord-style info card -->
+  <div class="discord-embed">
+    <h2>Ps Discord Server</h2>
+    <p>Ps is a private server of boblox bloxfruits owned by meow.<br>
+    If you join without permission, we will skibidi you.</p>
+    <a href="YOUR_DISCORD_INVITE_LINK" target="_blank">Join Discord</a>
+  </div>
+
+  <!-- Big red join button -->
   <a class="button" href="https://www.roblox.com/share?code=c63a033957385c49b498ccc922e4f501&type=Server">
     JOIN PS
   </a>
+
 </body>
 </html>
