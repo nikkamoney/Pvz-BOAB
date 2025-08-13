@@ -7,41 +7,83 @@
   <title>Join PS</title>
 
   <!-- Open Graph for Discord preview -->
-  <meta property="og:title" content="✨ PS Bloxfruits Server ✨">
-  <meta property="og:description" content="** Private Server ** 🚪 Owned by meow. Join without permission and we’ll kidnap and rape you 🍆💦">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Click Me If you have mewing skills">
+  <meta property="og:description" content="Private server owned by meow. Join without permission and we’ll kidnap you and gawk gawk 🍆💦 you">
   <meta property="og:url" content="https://meowkaps.vercel.app">
-  <meta property="og:image" content="https://i.imgur.com/IJAgB18.jpeg"> <!-- Replace with a real image link -->
-  <meta name="theme-color" content="#00ffff"> <!-- Bright cyan -->
+  <meta property="og:image" content="https://i.imgur.com/IJAgB18.jpeg?v=2">
+  <meta name="theme-color" content="ff4444">
+
+  <!-- (Optional but nice) Twitter Card tags — some clients look at these too -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PS Bloxfruits">
+  <meta name="twitter:description" content="Private server owned by meow. Join with permission only — or we’ll skibidi body slam you 😏">
+  <meta name="twitter:image" content="https://i.imgur.com/IJAgB18.jpeg?v=2">
 
   <style>
+    :root { --accent: #00ffff; }
+    * { box-sizing: border-box; }
     body {
       height: 100vh;
       margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #111;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(1200px 600px at 50% 30%, rgba(0,255,255,0.12), transparent 60%) #0e0e10;
+      color: #fff;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     }
-    a.button {
-      font-size: 10rem;
-      padding: 20px 40px;
-      background: #ff4444;
-      color: white;
+    .wrap {
+      text-align: center;
+      padding: 24px;
+    }
+    .title {
+      font-size: clamp(28px, 5vw, 44px);
+      margin: 0 0 8px;
+      letter-spacing: 0.5px;
+    }
+    .subtitle {
+      opacity: 0.7;
+      margin: 0 0 24px;
+    }
+    .button {
+      font-size: clamp(28px, 8vw, 80px);
+      padding: 14px 28px;
+      background: var(--accent);
+      color: #0b0b0c;
       text-decoration: none;
-      border-radius: 10px;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-      transition: background 0.3s, transform 0.2s;
+      border-radius: 14px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      display: inline-block;
+      box-shadow: 0 8px 24px rgba(0,255,255,0.25);
+      transform: translateY(0);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+      user-select: none;
     }
-    a.button:hover {
-      background: #cc0000;
-      transform: scale(1.05);
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0,255,255,0.35);
+      filter: brightness(1.05);
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 999px;
+      margin-bottom: 12px;
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      opacity: 0.8;
     }
   </style>
 </head>
 <body>
-  <a class="button" href="https://www.roblox.com/share?code=c63a033957385c49b498ccc922e4f501&type=Server">
-    JOIN PS
-  </a>
+  <div class="wrap">
+    <div class="badge">Private Server</div>
+    <h1 class="title">Meow Ka PS</h1>
+    <p class="subtitle">Join with permission only — or we’ll skibidi body slam you 😏</p>
+    <a class="button" href="https://www.roblox.com/share?code=c63a033957385c49b498ccc922e4f501&type=Server">JOIN PS</a>
+  </div>
 </body>
 </html>
